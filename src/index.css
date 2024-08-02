@@ -7,3 +7,13 @@
     padding: 0;
     font-family: "Barlow", sans-serif;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to top, #ccdbfd, #b8b8ff);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
