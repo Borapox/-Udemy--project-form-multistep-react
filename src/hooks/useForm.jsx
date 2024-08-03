@@ -15,7 +15,12 @@ const useForm = (steps) => {
     return {
         currentStep,
         currentComponent: steps[currentStep],
-        changeStep
+        changeStep,
+
+        // verificação do último passo
+        isLastStep: currentStep + 1 === steps.length ? true : false,
+
+        isFirstStep: currentStep === 0 ? true : false,
     };
 }
 
