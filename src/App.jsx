@@ -9,6 +9,7 @@ import Thanks from "./components/Thanks"
 //  Sessão de Hooks
 import useForm from "./hooks/useForm"
 import { FiSend } from "react-icons/fi";
+import Steps from "./components/Steps";
 
 
 function App() { 
@@ -33,7 +34,7 @@ function App() {
         className="max-w-[600px] bg-white p-6 shadow-customShadow"
       >
         
-          <p>Etapas</p>
+          <Steps currentStep = {currentStep} />
 
           <form 
             onSubmit={(e) => changeStep(currentStep + 1, e)}
