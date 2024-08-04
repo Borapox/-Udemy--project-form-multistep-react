@@ -33,14 +33,7 @@ const UserForm = () => {
           className='border-none shadow-borderNoneShadow outline-none rounded-md p-2'
           required 
         />
-
-        <textarea 
-        name="textarea"
-        placeholder='Digite sua avaliação'
-        className='border-none shadow-borderNoneShadow outline-none rounded-md p-2 h-40'
-        >
-
-        </textarea>
+        
     </div>
   )
 }
