@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserForm = () => {
+const UserForm = ({data,  updateFieldHandler}) => {
   return (
     <div className='flex flex-col gap-2.5 mb-8'>
         
@@ -16,7 +16,9 @@ const UserForm = () => {
           name="text" 
           placeholder='Digite seu nome' 
           required
-          className='border-none shadow-borderNoneShadow outline-none rounded-md p-2'
+          value={data.name || ""}
+          onChange={(e) => updateFieldHandler("name", e.target.value)}
+          className='border-none  shadow-borderNoneShadow outline-none rounded-md p-2'
         />
 
         <label 
@@ -30,6 +32,8 @@ const UserForm = () => {
           type="email" 
           name="email" 
           placeholder='Digite seu e-mail'
+          value={data.email || ""}
+          onChange={(e) => updateFieldHandler("email", e.target.value)}
           className='border-none shadow-borderNoneShadow outline-none rounded-md p-2'
           required 
         />
